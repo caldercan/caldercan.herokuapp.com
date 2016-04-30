@@ -7,16 +7,14 @@ config = {
 
   // Production (Heroku)
   production: {
-    // url: process.env.HEROKU_URL,
-    url: 'http://www.caldercan.com',
+    url: process.env.HEROKU_URL,
     mail: {
       transport: 'SMTP',
-      host: 'smtp.mailgun.com',
       options: {
         service: 'Mailgun',
         auth: {
-          user: process.env.MAILGUN_USERNAME,
-          pass: process.env.MAILGUN_APIKEY
+          user: process.env.MAILGUN_SMTP_LOGIN,
+          pass: process.env.MAILGUN_SMTP_PASSWORD
         }
       }
     },
