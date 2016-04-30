@@ -912,6 +912,7 @@ body > .wrapper {
 }
 @media (min-width: 1183px) {
   .header {
+    position: fixed;
     width: 328px;
     padding-top: 80px;
     padding-right: 40px;
