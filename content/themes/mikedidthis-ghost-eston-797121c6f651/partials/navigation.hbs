@@ -1,0 +1,29 @@
+{{!
+
+    Renders:
+      Header Navigation
+
+    Microdata:
+      Site Navigation Element
+      Site Navigation Element URL
+      Site Navigation Element Name
+
+}}
+
+<nav class="nav header-nav" role="navigation">
+  <span itemscope itemtype="http://schema.org/SiteNavigationElement" class="nav-item">
+    <a itemprop="url" href="{{@blog.url}}" title="Home" class="nav-link">
+      <span itemprop="name">Home</span>
+    </a>
+  </span>
+  <span itemscope itemtype="http://schema.org/SiteNavigationElement" class="nav-item">
+    <a itemprop="url" href="{{@blog.url}}/about" title="About" class="nav-link">
+      <span itemprop="name">About Me</span>
+    </a>
+  </span>
+  <span itemscope itemtype="http://schema.org/SiteNavigationElement" class="nav-item">
+    <a itemprop="url" href="http://erictherobot.com" title="Dad's Blog" class="nav-link">
+      <span itemprop="name">My Dad's Blog</span>
+    </a>
+  </span>
+</nav>
