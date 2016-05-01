@@ -13,7 +13,7 @@
 {{#if image}}
 {{^has tag="_quote, _link, _chat, _audio, _video"}}
 <figure class="post-media">
-  <img itemprop="image" src="{{ image }}" alt="{{ title }}">
+  <a itemprop="url" href="{{url}}" title="{{title}}"><img itemprop="image" src="{{ image }}" alt="{{ title }}"></a>
 </figure>
 {{#has tag="_overlay"}}
 <div class="post-cover" data-ani="hide" data-js="hover-cover"></div>
